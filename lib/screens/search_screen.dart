@@ -208,7 +208,7 @@ class _SearchScreenState extends State<SearchScreen> {
         Padding(
           padding: const EdgeInsets.all(16),
           child: Text(
-            'Results found for $_searchQuery',
+            '50 Results found for $_searchQuery',
             style: TextStyle(
               color: Colors.grey[600],
               fontSize: 14,
@@ -256,8 +256,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
   Widget _buildKitchenCard(Map<String, String> kitchen) {
     return Container(
-      margin: const EdgeInsets.symmetric(
-          vertical: 16, horizontal: 16), 
+      margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
       child: Stack(
         children: [
           Container(
@@ -266,7 +265,7 @@ class _SearchScreenState extends State<SearchScreen> {
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
                 color: const Color(0xFFE4E4E4),
-                width: 1, 
+                width: 1,
               ),
               boxShadow: [
                 BoxShadow(
@@ -287,13 +286,11 @@ class _SearchScreenState extends State<SearchScreen> {
                   child: Image.asset(
                     'assets/images/wavy.png',
                     width: double.infinity,
-                    height: 80, 
+                    height: 80,
                     fit: BoxFit.fill,
                   ),
                 ),
-
                 const SizedBox(height: 40),
-
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Row(
@@ -307,8 +304,7 @@ class _SearchScreenState extends State<SearchScreen> {
                           ),
                         ),
                       ),
-                      const SizedBox(
-                          width: 8), 
+                      const SizedBox(width: 8),
                       Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 8,
@@ -329,7 +325,6 @@ class _SearchScreenState extends State<SearchScreen> {
                     ],
                   ),
                 ),
-
                 Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
@@ -354,7 +349,6 @@ class _SearchScreenState extends State<SearchScreen> {
               ],
             ),
           ),
-
           Positioned(
             top: 50,
             left: 16,
