@@ -257,17 +257,16 @@ class _SearchScreenState extends State<SearchScreen> {
   Widget _buildKitchenCard(Map<String, String> kitchen) {
     return Container(
       margin: const EdgeInsets.symmetric(
-          vertical: 16, horizontal: 16), // Adjust margins as needed
+          vertical: 16, horizontal: 16), 
       child: Stack(
         children: [
-          // Main Card
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
-                color: const Color(0xFFE4E4E4), // Add border color
-                width: 1, // Set the border width (1px)
+                color: const Color(0xFFE4E4E4),
+                width: 1, 
               ),
               boxShadow: [
                 BoxShadow(
@@ -280,16 +279,15 @@ class _SearchScreenState extends State<SearchScreen> {
             ),
             child: Column(
               children: [
-                // Wavy Image as the background
                 ClipRRect(
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(12),
                     topRight: Radius.circular(12),
                   ),
                   child: Image.asset(
-                    'assets/images/wavy.png', // Add your wavy background image here
+                    'assets/images/wavy.png',
                     width: double.infinity,
-                    height: 80, // Increased height for the wave background
+                    height: 80, 
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -310,7 +308,7 @@ class _SearchScreenState extends State<SearchScreen> {
                         ),
                       ),
                       const SizedBox(
-                          width: 8), // Small space between name and Open
+                          width: 8), 
                       Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 8,
@@ -332,7 +330,6 @@ class _SearchScreenState extends State<SearchScreen> {
                   ),
                 ),
 
-                // Delivery time
                 Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
